@@ -13,6 +13,7 @@
 h1 {
     color: var(--color-secondary);
     font-size: 4vh;
+    min-width: fit-content;
 }
 
 h1 span {
@@ -44,6 +45,7 @@ body {
     font-weight: 450;
     flex: 1;
     text-align: center;
+    display: block;
 }
 
 .nav li a:hover {
@@ -61,11 +63,11 @@ p a {
 }
 
 div {
-    width: 30vw;
+    width: 85%;
 }
 
 img {
-    width: 30vw;
+    width: 85%;
     height: 20vw;
     object-fit: cover;
     border-radius: 10px;
@@ -77,3 +79,13 @@ img {
     font-size: 1.5vh;
     font-weight: 500;
 }
+
+@media (min-width: 768px) {
+    div {
+        width: 50%;
+    }
+
+    img {
+        width: 50%;
+    }
+  }
